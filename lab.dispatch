@@ -1,0 +1,37 @@
+{
+  "authoringRegion": "westus",
+  "hierarchical": true,
+  "useAllTrainingData": false,
+  "dontReviseUtterance": false,
+  "copyLuisData": true,
+  "services": [
+    {
+      "intentName": "l_Weather",
+      "appId": "e012b7db-cd86-4dc4-bfd9-7a978588f3ca",
+      "authoringKey": "8f06c60929be41e5984b89fca7131e59",
+      "version": "0.1",
+      "region": "westus",
+      "type": "luis",
+      "name": "Weather",
+      "id": "1"
+    },
+    {
+      "intentName": "q_sample-qna",
+      "kbId": "d410c235-94e1-42cb-91d5-0e6adb3313f3",
+      "subscriptionKey": "44955fb664f64573a2d1c00a7e2523dc",
+      "type": "qna",
+      "name": "SmartLight",
+      "id": "2"
+    }
+  ],
+  "serviceIds": [
+    "1",
+    "2"
+  ],
+  "appId": "608c8282-d23b-40ad-aa84-172b41326347",
+  "authoringKey": "8f06c60929be41e5984b89fca7131e59",
+  "version": "Dispatch",
+  "region": "westus",
+  "type": "dispatch",
+  "name": "lab"
+}

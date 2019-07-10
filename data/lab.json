@@ -1,0 +1,63 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "Dispatch",
+  "name": "lab",
+  "desc": "Dispatch model for lab",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "l_Weather"
+    },
+    {
+      "name": "q_sample-qna"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [
+    {
+      "name": "Location_PatternAny",
+      "roles": [],
+      "explicitList": []
+    }
+  ],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [
+    {
+      "pattern": "show me the forecast for {Location_PatternAny}",
+      "intent": "l_Weather"
+    },
+    {
+      "pattern": "how's the weather in {Location_PatternAny}",
+      "intent": "l_Weather"
+    },
+    {
+      "pattern": "current weather in {Location_PatternAny}",
+      "intent": "l_Weather"
+    },
+    {
+      "pattern": "weather in {Location_PatternAny}",
+      "intent": "l_Weather"
+    },
+    {
+      "pattern": "what's the forecast for {Location_PatternAny}",
+      "intent": "l_Weather"
+    },
+    {
+      "pattern": "what's the forecast for next week in {Location_PatternAny}",
+      "intent": "l_Weather"
+    }
+  ],
+  "utterances": [],
+  "settings": [
+    {
+      "name": "NormalizeDiacritics",
+      "value": "true"
+    }
+  ]
+}
